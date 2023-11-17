@@ -7,6 +7,7 @@
 	import Htmx from './Slides/Htmx.svelte'
 	import Turso from './Slides/Turso.svelte'
 	import Bun from './Slides/Bun.svelte'
+	import Elysia from './Slides/Elysia.svelte'
 
 	const animateCard = () => {
 		document.querySelectorAll('.card').forEach((card) => {
@@ -150,4 +151,31 @@
 	</Slide>
 
 	<Bun />
+
+	<Slide animate>
+		<h1 class="text-5xl mb-6">What even are these things?</h1>
+		<div class="grid grid-cols-1 h-[70vh] items-start">
+			<div class="grid grid-cols-2 mx-auto gap-10 justify-start items-center">
+				<img class="h-32 w-32 object-contain" alt="bun logo" src={bun} />
+				<span class="text-start">Bun</span>
+			</div>
+			<div class="grid grid-cols-2 mx-auto gap-10 justify-start items-center">
+				<img
+					class="h-32 w-32 object-contain"
+					alt="elysia js logo"
+					src={elysia}
+				/>
+				<span class="text-start">Elysia</span>
+			</div>
+			<div class="grid grid-cols-2 mx-auto gap-10 justify-start items-center">
+				<img class="h-32 w-32 object-contain" alt="turso logo" src={turso} />
+				<span class="text-start">Turso</span>
+			</div>
+			<div class="grid grid-cols-2 mx-auto gap-10 justify-start items-center">
+				<img class="h-32 w-32 object-contain" alt="htmx logo" src={htmx} />
+				<span class="text-start">HTMX</span>
+			</div>
+		</div>
+	</Slide>
+	<Elysia/>
 </Presentation>
