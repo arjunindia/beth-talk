@@ -8,6 +8,7 @@
 	import Turso from './Slides/Turso.svelte'
 	import Bun from './Slides/Bun.svelte'
 	import Elysia from './Slides/Elysia.svelte'
+	import Remaining from './Slides/Remaining.svelte'
 
 	const animateCard = () => {
 		document.querySelectorAll('.card').forEach((card) => {
@@ -178,4 +179,5 @@
 		</div>
 	</Slide>
 	<Elysia/>
+	<Remaining/>
 </Presentation>
